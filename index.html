@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VOLK NOIR </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Share+Tech+Mono&family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="gate" id="gate">
+  <div class="gate-inner">
+    <button class="gate-btn" id="gateEnter">welcome to volk noir(click here)</button>
+  </div>
+</div>
+
+
+<canvas id="bg-canvas"></canvas>
+
+<header class="site-header">
+  <div class="logo">VOLK<span class="glitch" data-text="NOIR">NOIR</span><em>المنظمه</em></div>
+  <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="siteNav">
+    <ul>
+      <li><a href="#about" data-coord="01"> المنظمه</a></li>
+      <li><a href="#activities" data-coord="02"> الطقوس</a></li>
+      <li><a href="#join" data-coord="03"> القبول</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero" id="home">
+    <div class="hero-inner reveal">
+      <div class="tag-line">// الخروج ليسا بلسهل</div>
+      <h1 class="hero-title">
+        <span class="glitch" data-text="VOLK NOIR">VOLK NOIR</span>
+      </h1>
+      <p class="hero-sub">لا يُدعى إلى هذاالمكان اي أحد.لا تجده هو من يجدك، لا ينصت لما يُقال في العلن.</p>
+      <div class="hero-actions">
+        <a href="#join" class="btn btn-primary">استمارت تسجيل </a>
+        <a href="#about" class="btn btn-ghost">بيانات المنظمه<span class="mono">[~_~]</span></a>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-item"><span class="k">المكان</span><span class="v">لا إحداثيات</span></div>
+        <div class="meta-item"><span class="k">الحالة</span><span class="v">مستيقظ — لأعضائه فقط</span></div>
+      </div>
+    </div>
+    <div class="scroll-cue">
+      <span class="bar"></span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-head reveal">
+      <span class="file-tag mono">السجل // 01</span>
+      <h2>المنظمه</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p><strong>VOLK NOIR</strong> ليس ناديًا، بل محفلًا. يجتمع أعضاؤه في قاعة لا نافذة فيها، حيث الجدران تنبض ببطء كأنها تتنفس مع شيء أقدم منها. لا صوت هناك إلا صوت القرار وهو يُتخذ.</p>
+        <p>من يدخل هذا المحفل لا يعود كما كان. يحمل معه ما لا يُقال، وما لا يُكتب، وشبكة من الثقة لا تُمنح مرتين.</p>
+        <div class="stat-grid">
+          <div class="stat"><b class="counter" data-target="3">0</b><span class="mono">عدد الاعضاء</span></div>
+          <div class="stat"><b class="counter" data-target="00">0</b><span class="mono">عدد العمليات </span></div>
+          <div class="stat"><b class="counter" data-target="0">0</b><span class="mono">عدد الموتا</span></div>
+        </div>
+      </div>
+      <blockquote class="pullquote reveal">
+        "لا يُضاء هذا المكان. فيه فقط، ترى بوضوح."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ACTIVITIES -->
+  <section class="activities" id="activities">
+    <div class="section-head reveal">
+      <span class="file-tag mono">السجل // 02</span>
+      <h2>الطقوس</h2>
+    </div>
+    <p class="lead reveal">ما جرى تحت الأرض، وما لم يحن وقته بعد.</p>
+
+    <div class="dossier-grid">
+
+      <article class="dossier-card reveal" data-tilt>
+        <div class="card-head">
+          <span class="mono">طقس_001</span>
+          <span class="status status-closed">مجهول</span>
+        </div>
+        <h3>ليلة القبول الأولى</h3>
+        <p>اجتماع مغلق لاستقبال الوجوه الجديدة، وأول همسة حول ما ينتظر في العمق.</p>
+        <div class="card-foot mono">مجهول</div>
+      </article>
+
+      <article class="dossier-card reveal" data-tilt>
+        <div class="card-head">
+          <span class="mono">طقس_002</span>
+          <span class="status status-closed">مجهول</span>
+        </div>
+        <h3>مائدة العشرين</h3>
+        <p>عشاء صامت بحضور عشرين فقط، حيث تُقال القرارات الكبرى دون أن تُكتب.</p>
+        <div class="card-foot mono">مجهول</div>
+      </article>
+
+      <article class="dossier-card reveal" data-tilt>
+        <div class="card-head">
+          <span class="mono">طقس_003</span>
+          <span class="status status-open">مجهول</span>
+        </div>
+        <h3>جلسة الأقنعة</h3>
+        <p>لقاء مغلق حول كيف يبني المرء وجهًا يُرى، وآخر يبقى للمحفل وحده.</p>
+        <div class="card-foot mono">مجهول </div>
+      </article>
+
+      <article class="dossier-card reveal" data-tilt>
+        <div class="card-head">
+          <span class="mono">طقس_004</span>
+          <span class="status status-open">مجهول</span>
+        </div>
+        <h3>الاجتماع الكبير</h3>
+        <p>الليلة التي يحضر فيها كل الأعضاء معًا، وتُفتح فيها أبواب لا تُفتح إلا مرة كل عام.</p>
+        <div class="card-foot mono">مجهول</div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- JOIN -->
+  <section class="join" id="join">
+    <div class="section-head reveal">
+      <h2>التقديم</h2>
+    </div>
+    <div class="join-grid">
+      <div class="join-info reveal">
+        <p>لا يُقبل الجميع. اترك اسمك هنا، وإن كان يريدك، فسيجدك.</p>
+        <div class="info-row"><span class="k mono">اتصال</span><span class="v">مجهول</span></div>
+        <div class="info-row"><span class="k mono">المكان</span><span class="v">مجهول</span></div>
+        <div class="info-row"><span class="k mono">الساعات</span><span class="v">مجهول</span></div>
+      </div>
+
+      <form class="join-form reveal" id="joinForm">
+        <div class="form-corner mono">سجل_القبول</div>
+        <div class="form-row">
+          <label class="mono">الاسم الكامل</label>
+          <input type="text" placeholder="اكتب اسمك الكامل" required>
+        </div>
+        <div class="form-row">
+          <label class="mono">البريد الإلكتروني</label>
+          <input type="email" placeholder="example@email.com" required>
+        </div>
+        <div class="form-row">
+          <label class="mono">رقم الهاتف</label>
+          <input type="tel" placeholder="+20">
+        </div>
+        <div class="form-row">
+          <label class="mono">المجال المهني</label>
+          <input type="text" placeholder="مثال: تجارة، استشارات، صناعة">
+        </div>
+        <div class="form-row">
+          <label class="mono">رسالة قصيرة</label>
+          <textarea placeholder="عرّفنا بنفسك ولماذا تسعى للقبول"></textarea>
+        </div>
+        <div class="checkbox-row">
+          <input type="checkbox" id="volunteer">
+          <label for="volunteer">اتعهد بحفظ سرية المكان</label>
+        </div>
+        <button type="submit">أرسل طلب القبول</button>
+        <p class="form-note mono">* نموذج تصميمي — يحتاج ربط بخدمة إرسال فعلية لتفعيله.</p>
+        <p class="form-success mono" id="formSuccess">وصل نداؤك. سيُجاب في وقته.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="logo small">VOLK<span>NOIR</span></div>
+  <!-- <span class="mono fine">المحفل يذكر من دخله — كل الحقوق محفوظة</span> -->
+</footer>
+
+<audio id="bgAudio" loop preload="auto">
+  <source src="audio/sound_back_index.mp3" type="audio/mpeg">
+</audio>
+<button id="soundToggle" class="sound-toggle mono" aria-label="تشغيل الصوت">🔇</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/128/three.min.js"></script>
+<script src="js/scene.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

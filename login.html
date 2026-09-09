@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="تسجيل الدخول إلى Volk Noir." />
+        <title>Volk Noir | تسجيل الدخول</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="login.css" />
+    </head>
+    <body>
+        <main class="login-page">
+            <video class="login-video" autoplay muted loop playsinline preload="auto" poster="./image/volknoir.png" aria-hidden="true">
+                <source src="./video/video.mp4" type="video/mp4" />
+            </video>
+            <audio id="login-sound" loop preload="auto">
+                <source src="./sound/sound_back%20_login.mp3" type="audio/mpeg" />
+            </audio>
+            <div class="login-atmosphere" aria-hidden="true"></div>
+            <section class="login-card" aria-labelledby="login-title">
+                <div class="brand">VOLK<span>NOIR</span></div>
+                <button class="sound-toggle" id="sound-toggle" type="button" aria-label="تشغيل صوت الخلفية" aria-pressed="false"><span>◌</span><strong>SOUND OFF</strong></button>
+                <div class="logo-wrap"><img src="image/volknoir.png" alt="شعار Volk Noir" /></div>
+                <p class="eyebrow">PRIVATE ACCESS / 01</p>
+                <h1 id="login-title">مرحبًا<br /><em> بعودتك </em> </h1>
+                <p class="intro">ادخل إلى مساحة Volk Noir الخاصة.</p>
+                <form id="login-form">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required />
+                    <div class="password-label"><label for="password">كلمة المرور</label><a id="forgot-password" href="#forgot-password">نسيت كلمة المرور؟</a></div>
+                    <div class="password-field"><input id="password" name="password" type="password" autocomplete="current-password" placeholder="••••••••" required minlength="6" /><button id="toggle-password" type="button" aria-label="إظهار كلمة المرور">◉</button></div>
+                    <label class="remember"><input type="checkbox" name="remember" /> <span>تذكرني على هذا الجهاز</span></label>
+                    <button class="submit-button" type="submit">تسجيل الدخول <span>↗</span></button>
+                    <p class="form-message" id="form-message" role="status"></p>
+                </form>
+                <p class="signup">ليس لديك حساب؟ <a href="mailto:hello@volknoir.com">اطلب دعوة</a></p>
+            </section>
+            <footer><span> VOLK NOIR</span><span> KIRA</span></footer>
+        </main>
+        <script src="login.js"></script>
+    </body>
+</html>
